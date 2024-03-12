@@ -39,37 +39,37 @@ select 'vitalperiodic'             as tbl, 146671642 as row_count
 )
 , observed as
 (
-select 'admissiondrug'             as tbl, count(*) as row_count from admissiondrug             UNION
-select 'admissiondx'               as tbl, count(*) as row_count from admissiondx               UNION
-select 'allergy'                   as tbl, count(*) as row_count from allergy                   UNION
-select 'apacheapsvar'              as tbl, count(*) as row_count from apacheapsvar              UNION
-select 'apachepatientresult'       as tbl, count(*) as row_count from apachepatientresult       UNION
-select 'apachepredvar'             as tbl, count(*) as row_count from apachepredvar             UNION
-select 'careplancareprovider'      as tbl, count(*) as row_count from careplancareprovider      UNION
-select 'careplaneol'               as tbl, count(*) as row_count from careplaneol               UNION
-select 'careplangeneral'           as tbl, count(*) as row_count from careplangeneral           UNION
-select 'careplangoal'              as tbl, count(*) as row_count from careplangoal              UNION
-select 'careplaninfectiousdisease' as tbl, count(*) as row_count from careplaninfectiousdisease UNION
-SELECT 'customlab'                 as tbl, COUNT(*) AS row_count FROM customlab                 UNION
-select 'diagnosis'                 as tbl, count(*) as row_count from diagnosis                 UNION
-select 'hospital'                  as tbl, count(*) as row_count from hospital                  UNION
-select 'infusiondrug'              as tbl, count(*) as row_count from infusiondrug              UNION
-SELECT 'intakeoutput'              as tbl, COUNT(*) AS row_count FROM intakeoutput              UNION
-select 'lab'                       as tbl, count(*) as row_count from lab                       UNION
-select 'medication'                as tbl, count(*) as row_count from medication                UNION
-SELECT 'microlab'                  as tbl, COUNT(*) AS row_count FROM microlab                  UNION
-SELECT 'note'                      as tbl, COUNT(*) AS row_count FROM note                      UNION
-SELECT 'nurseassessment'           as tbl, COUNT(*) AS row_count FROM nurseassessment           UNION
-SELECT 'nursecare'                 as tbl, COUNT(*) AS row_count FROM nursecare                 UNION
-SELECT 'nursecharting'             as tbl, COUNT(*) AS row_count FROM nursecharting             UNION
-select 'pasthistory'               as tbl, count(*) as row_count from pasthistory               UNION
-SELECT 'physicalexam'              as tbl, COUNT(*) AS row_count FROM physicalexam              UNION
-SELECT 'respiratorycare'           as tbl, COUNT(*) AS row_count FROM respiratorycare           UNION
-SELECT 'respiratorycharting'       as tbl, COUNT(*) AS row_count FROM respiratorycharting       UNION
-select 'patient'                   as tbl, count(*) as row_count from patient                   UNION
-select 'treatment'                 as tbl, count(*) as row_count from treatment                 UNION
-select 'vitalaperiodic'            as tbl, count(*) as row_count from vitalaperiodic            UNION
-select 'vitalperiodic'             as tbl, count(*) as row_count from vitalperiodic
+select 'admissiondrug'             as tbl, count(*) as row_count from eicu.admissiondrug             UNION
+select 'admissiondx'               as tbl, count(*) as row_count from eicu.admissiondx               UNION
+select 'allergy'                   as tbl, count(*) as row_count from eicu.allergy                   UNION
+select 'apacheapsvar'              as tbl, count(*) as row_count from eicu.apacheapsvar              UNION
+select 'apachepatientresult'       as tbl, count(*) as row_count from eicu.apachepatientresult       UNION
+select 'apachepredvar'             as tbl, count(*) as row_count from eicu.apachepredvar             UNION
+select 'careplancareprovider'      as tbl, count(*) as row_count from eicu.careplancareprovider      UNION
+select 'careplaneol'               as tbl, count(*) as row_count from eicu.careplaneol               UNION
+select 'careplangeneral'           as tbl, count(*) as row_count from eicu.careplangeneral           UNION
+select 'careplangoal'              as tbl, count(*) as row_count from eicu.careplangoal              UNION
+select 'careplaninfectiousdisease' as tbl, count(*) as row_count from eicu.careplaninfectiousdisease UNION
+SELECT 'customlab'                 as tbl, COUNT(*) AS row_count from eicu.customlab                 UNION
+select 'diagnosis'                 as tbl, count(*) as row_count from eicu.diagnosis                 UNION
+select 'hospital'                  as tbl, count(*) as row_count from eicu.hospital                  UNION
+select 'infusiondrug'              as tbl, count(*) as row_count from eicu.infusiondrug              UNION
+SELECT 'intakeoutput'              as tbl, COUNT(*) AS row_count from eicu.intakeoutput              UNION
+select 'lab'                       as tbl, count(*) as row_count from eicu.lab                       UNION
+select 'medication'                as tbl, count(*) as row_count from eicu.medication                UNION
+SELECT 'microlab'                  as tbl, COUNT(*) AS row_count from eicu.microlab                  UNION
+SELECT 'note'                      as tbl, COUNT(*) AS row_count from eicu.note                      UNION
+SELECT 'nurseassessment'           as tbl, COUNT(*) AS row_count from eicu.nurseassessment           UNION
+SELECT 'nursecare'                 as tbl, COUNT(*) AS row_count from eicu.nursecare                 UNION
+SELECT 'nursecharting'             as tbl, COUNT(*) AS row_count from eicu.nursecharting             UNION
+select 'pasthistory'               as tbl, count(*) as row_count from eicu.pasthistory               UNION
+SELECT 'physicalexam'              as tbl, COUNT(*) AS row_count from eicu.physicalexam              UNION
+SELECT 'respiratorycare'           as tbl, COUNT(*) AS row_count from eicu.respiratorycare           UNION
+SELECT 'respiratorycharting'       as tbl, COUNT(*) AS row_count from eicu.respiratorycharting       UNION
+select 'patient'                   as tbl, count(*) as row_count from eicu.patient                   UNION
+select 'treatment'                 as tbl, count(*) as row_count from eicu.treatment                 UNION
+select 'vitalaperiodic'            as tbl, count(*) as row_count from eicu.vitalaperiodic            UNION
+select 'vitalperiodic'             as tbl, count(*) as row_count from eicu.vitalperiodic
 )
 select
   exp.tbl

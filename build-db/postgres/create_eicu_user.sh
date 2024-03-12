@@ -54,19 +54,19 @@ if [[ $err2 == *"Peer authentication failed for user"* ]]; then
   PSQL=$SUDO' '$PSQL
 fi
 
-# step 1) create user, if needed
-if [ "$DBUSER" != "postgres" ]; then
-    # we need to create this user via postgres
-    if $PSQL -U postgres -d postgres -t -c '\du' | cut -d \| -f 1 | grep -qw $DBUSER; then
-      echo "User already exists. Not recreating user."
-    else
-      $PSQL -U postgres -d postgres -c "CREATE USER $DBUSER WITH PASSWORD '$DBPASS';"
-    fi
-fi
+# # step 1) create user, if needed
+# if [ "$DBUSER" != "postgres" ]; then
+#     # we need to create this user via postgres
+#     if $PSQL -U postgres -d postgres -t -c '\du' | cut -d \| -f 1 | grep -qw $DBUSER; then
+#       echo "User already exists. Not recreating user."
+#     else
+#       $PSQL -U postgres -d postgres -c "CREATE USER $DBUSER WITH PASSWORD '$DBPASS';"
+#     fi
+# fi
 
 if [ "$DBNAME" != "postgres" ]; then
   # drop and recreate the database
-  $PSQL -U postgres -d postgres -c "DROP DATABASE IF EXISTS $DBNAME;"
+  $PSQL -U jhkim -d  -c "DROP DATABASE IF EXISTS $DBNAME;"
   $PSQL -U postgres -d postgres -c "CREATE DATABASE $DBNAME OWNER $DBUSER;"
 fi
 

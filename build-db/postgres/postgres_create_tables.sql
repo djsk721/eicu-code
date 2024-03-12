@@ -14,8 +14,8 @@
 --  DDL for Table ADMISSIONDRUG
 --------------------------------------------------------
 
-DROP TABLE IF EXISTS admissiondrug CASCADE;
-CREATE TABLE admissiondrug
+DROP TABLE IF EXISTS eicu.admissiondrug CASCADE;
+CREATE TABLE  eicu.eicu.admissiondrug
 (
   admissiondrugid INT NOT NULL,
   patientunitstayid INT NOT NULL,
@@ -31,14 +31,14 @@ CREATE TABLE admissiondrug
   drugunit VARCHAR(1000),
   drugadmitfrequency VARCHAR(1000) NOT NULL,
   drughiclseqno INT
-) ;
+);
 
 --------------------------------------------------------
 --  DDL for Table ADMISSIONDX
 --------------------------------------------------------
 
-DROP TABLE IF EXISTS admissiondx CASCADE;
-CREATE TABLE admissiondx
+DROP TABLE IF EXISTS eicu.admissiondx CASCADE;
+CREATE TABLE  eicu.admissiondx
 (
   admissiondxid INT NOT NULL,
   patientunitstayid INT NOT NULL,
@@ -52,8 +52,8 @@ CREATE TABLE admissiondx
 --  DDL for Table ALLERGY
 --------------------------------------------------------
 
-DROP TABLE IF EXISTS allergy CASCADE;
-CREATE TABLE allergy
+DROP TABLE IF EXISTS eicu.allergy CASCADE;
+CREATE TABLE  eicu.allergy
 (
   allergyid INT NOT NULL,
   patientunitstayid INT NOT NULL,
@@ -75,8 +75,8 @@ CREATE TABLE allergy
 --  DDL for Table APACHEAPSVAR
 --------------------------------------------------------
 
-DROP TABLE IF EXISTS apacheapsvar CASCADE;
-CREATE TABLE apacheapsvar
+DROP TABLE IF EXISTS eicu.apacheapsvar CASCADE;
+CREATE TABLE  eicu.apacheapsvar
 (
   apacheapsvarid INT,
 	patientunitstayid INT,
@@ -109,8 +109,8 @@ CREATE TABLE apacheapsvar
 --  DDL for Table APACHEPATIENTRESULT
 --------------------------------------------------------
 
-DROP TABLE IF EXISTS apachepatientresult CASCADE;
-CREATE TABLE apachepatientresult
+DROP TABLE IF EXISTS eicu.apachepatientresult CASCADE;
+CREATE TABLE  eicu.apachepatientresult
 (
   apachepatientresultsid INT NOT NULL,
 	patientunitstayid INT NOT NULL,
@@ -140,8 +140,8 @@ CREATE TABLE apachepatientresult
 --  DDL for Table APACHEPREDVAR
 --------------------------------------------------------
 
-DROP TABLE IF EXISTS apachepredvar CASCADE;
-CREATE TABLE apachepredvar
+DROP TABLE IF EXISTS eicu.apachepredvar CASCADE;
+CREATE TABLE  eicu.apachepredvar
 (
   apachepredvarid INT,
 	patientunitstayid INT,
@@ -200,8 +200,8 @@ CREATE TABLE apachepredvar
 --  DDL for Table CAREPLANCAREPROVIDER
 --------------------------------------------------------
 
-DROP TABLE IF EXISTS careplancareprovider CASCADE;
-CREATE TABLE careplancareprovider
+DROP TABLE IF EXISTS eicu.careplancareprovider CASCADE;
+CREATE TABLE  eicu.careplancareprovider
 (
 	cplcareprovderid INT NOT NULL,
 	patientunitstayid INT NOT NULL,
@@ -216,8 +216,8 @@ CREATE TABLE careplancareprovider
 --  DDL for Table CAREPLANEOL
 --------------------------------------------------------
 
-DROP TABLE IF EXISTS careplaneol CASCADE;
-CREATE TABLE careplaneol
+DROP TABLE IF EXISTS eicu.careplaneol CASCADE;
+CREATE TABLE  eicu.careplaneol
 (
   cpleolid INT NOT NULL,
 	patientunitstayid INT NOT NULL,
@@ -229,8 +229,8 @@ CREATE TABLE careplaneol
 --  DDL for Table CAREPLANGENERAL
 --------------------------------------------------------
 
-DROP TABLE IF EXISTS careplangeneral CASCADE;
-CREATE TABLE careplangeneral
+DROP TABLE IF EXISTS eicu.careplangeneral CASCADE;
+CREATE TABLE  eicu.careplangeneral
 (
   cplgeneralid INT NOT NULL,
 	patientunitstayid INT NOT NULL,
@@ -243,8 +243,8 @@ CREATE TABLE careplangeneral
 --  DDL for Table CAREPLANGOAL
 --------------------------------------------------------
 
-DROP TABLE IF EXISTS careplangoal CASCADE;
-CREATE TABLE careplangoal
+DROP TABLE IF EXISTS eicu.careplangoal CASCADE;
+CREATE TABLE  eicu.careplangoal
 (
 	cplgoalid INT NOT NULL,
 	patientunitstayid INT NOT NULL,
@@ -258,8 +258,8 @@ CREATE TABLE careplangoal
 --  DDL for Table CAREPLANINFECTIOUSDISEASE
 --------------------------------------------------------
 
-DROP TABLE IF EXISTS careplaninfectiousdisease CASCADE;
-CREATE TABLE careplaninfectiousdisease
+DROP TABLE IF EXISTS eicu.careplaninfectiousdisease CASCADE;
+CREATE TABLE  eicu.careplaninfectiousdisease
 (
   cplinfectid INT NOT NULL,
 	patientunitstayid INT NOT NULL,
@@ -274,8 +274,8 @@ CREATE TABLE careplaninfectiousdisease
 --  DDL for Table CUSTOMLAB
 --------------------------------------------------------
 
-DROP TABLE IF EXISTS customlab CASCADE;
-CREATE TABLE customlab
+DROP TABLE IF EXISTS eicu.customlab CASCADE;
+CREATE TABLE  eicu.customlab
 (
 	customlabid INT NOT NULL,
 	patientunitstayid INT NOT NULL,
@@ -289,8 +289,8 @@ CREATE TABLE customlab
 --  DDL for Table DIAGNOSIS
 --------------------------------------------------------
 
-DROP TABLE IF EXISTS diagnosis CASCADE;
-CREATE TABLE diagnosis
+DROP TABLE IF EXISTS eicu.diagnosis CASCADE;
+CREATE TABLE  eicu.diagnosis
 (
   diagnosisid INT NOT NULL,
 	patientunitstayid INT NOT NULL,
@@ -304,8 +304,8 @@ CREATE TABLE diagnosis
 --  DDL for Table HOSPITAL
 --------------------------------------------------------
 
-DROP TABLE IF EXISTS hospital CASCADE;
-CREATE TABLE hospital
+DROP TABLE IF EXISTS eicu.hospital CASCADE;
+CREATE TABLE  eicu.hospital
 (
 	hospitalid INT NOT NULL,
 	numbedscategory VARCHAR(32),
@@ -317,8 +317,8 @@ CREATE TABLE hospital
 --  DDL for Table INFUSIONDRUG
 --------------------------------------------------------
 
-DROP TABLE IF EXISTS infusiondrug CASCADE;
-CREATE TABLE infusiondrug
+DROP TABLE IF EXISTS eicu.infusiondrug CASCADE;
+CREATE TABLE  eicu.infusiondrug
 (
   infusiondrugid INT NOT NULL,
   patientunitstayid INT NOT NULL,
@@ -335,8 +335,8 @@ CREATE TABLE infusiondrug
 --  DDL for Table INTAKEOUTPUT
 --------------------------------------------------------
 
-DROP TABLE IF EXISTS intakeoutput CASCADE;
-CREATE TABLE intakeoutput
+DROP TABLE IF EXISTS eicu.intakeoutput CASCADE;
+CREATE TABLE  eicu.intakeoutput
 (
 	intakeoutputid INT NOT NULL,
   patientunitstayid INT NOT NULL,
@@ -356,8 +356,8 @@ CREATE TABLE intakeoutput
 --  DDL for Table LAB
 --------------------------------------------------------
 
-DROP TABLE IF EXISTS lab CASCADE;
-CREATE TABLE lab
+DROP TABLE IF EXISTS eicu.lab CASCADE;
+CREATE TABLE  eicu.lab
 (
   labid INT NOT NULL,
 	patientunitstayid INT NOT NULL,
@@ -375,8 +375,8 @@ CREATE TABLE lab
 --  DDL for Table MEDICATION
 --------------------------------------------------------
 
-DROP TABLE IF EXISTS medication CASCADE;
-CREATE TABLE medication
+DROP TABLE IF EXISTS eicu.medication CASCADE;
+CREATE TABLE  eicu.medication
 (
     medicationid INT NOT NULL,
     patientunitstayid INT NOT NULL,
@@ -399,8 +399,8 @@ CREATE TABLE medication
 --  DDL for Table MICROLAB
 --------------------------------------------------------
 
-DROP TABLE IF EXISTS microlab CASCADE;
-CREATE TABLE microlab
+DROP TABLE IF EXISTS eicu.microlab CASCADE;
+CREATE TABLE  eicu.microlab
 (
     microlabid INT NOT NULL,
     patientunitstayid INT NOT NULL,
@@ -415,8 +415,8 @@ CREATE TABLE microlab
 --  DDL for Table NOTE
 --------------------------------------------------------
 
-DROP TABLE IF EXISTS note CASCADE;
-CREATE TABLE note
+DROP TABLE IF EXISTS eicu.note CASCADE;
+CREATE TABLE  eicu.note
 (
 	NOTEID INT NOT NULL,
 	patientunitstayid INT NOT NULL,
@@ -432,8 +432,8 @@ CREATE TABLE note
 --  DDL for Table NURSEASSESSMENT
 --------------------------------------------------------
 
-DROP TABLE IF EXISTS NURSEASSESSMENT CASCADE;
-CREATE TABLE NURSEASSESSMENT
+DROP TABLE IF EXISTS eicu.NURSEASSESSMENT CASCADE;
+CREATE TABLE  eicu.NURSEASSESSMENT
 (
 	nurseassessid INT NOT NULL,
 	patientunitstayid INT NOT NULL,
@@ -449,8 +449,8 @@ CREATE TABLE NURSEASSESSMENT
 --  DDL for Table NURSECARE
 --------------------------------------------------------
 
-DROP TABLE IF EXISTS NURSECARE CASCADE;
-CREATE TABLE NURSECARE
+DROP TABLE IF EXISTS eicu.NURSECARE CASCADE;
+CREATE TABLE  eicu.NURSECARE
 (
   nursecareid INT NOT NULL,
 	patientunitstayid INT NOT NULL,
@@ -466,8 +466,8 @@ CREATE TABLE NURSECARE
 --  DDL for Table NURSECHARTING
 --------------------------------------------------------
 
-DROP TABLE IF EXISTS NURSECHARTING CASCADE;
-CREATE TABLE NURSECHARTING
+DROP TABLE IF EXISTS eicu.NURSECHARTING CASCADE;
+CREATE TABLE  eicu.NURSECHARTING
 (
   nursingchartid BIGINT NOT NULL,
 	patientunitstayid INT NOT NULL,
@@ -483,8 +483,8 @@ CREATE TABLE NURSECHARTING
 --  DDL for Table PASTHISTORY
 --------------------------------------------------------
 
-DROP TABLE IF EXISTS pasthistory CASCADE;
-CREATE TABLE pasthistory
+DROP TABLE IF EXISTS eicu.pasthistory CASCADE;
+CREATE TABLE  eicu.pasthistory
 (
 	pasthistoryid INT NOT NULL,
 	patientunitstayid INT NOT NULL,
@@ -499,8 +499,8 @@ CREATE TABLE pasthistory
 --  DDL for Table PATIENT
 --------------------------------------------------------
 
-DROP TABLE IF EXISTS patient CASCADE;
-CREATE TABLE patient
+DROP TABLE IF EXISTS eicu.patient CASCADE;
+CREATE TABLE  eicu.patient
 (
 	patientunitstayid INT,
 	patienthealthsystemstayid INT,
@@ -537,8 +537,8 @@ CREATE TABLE patient
 --  DDL for Table PHYSICALEXAM
 --------------------------------------------------------
 
-DROP TABLE IF EXISTS physicalexam CASCADE;
-CREATE TABLE physicalexam
+DROP TABLE IF EXISTS eicu.physicalexam CASCADE;
+CREATE TABLE  eicu.physicalexam
 (
 	physicalexamid INT,
 	patientunitstayid INT NOT NULL,
@@ -552,8 +552,8 @@ CREATE TABLE physicalexam
 --  DDL for Table RESPIRATORYCARE
 --------------------------------------------------------
 
-DROP TABLE IF EXISTS RESPIRATORYCARE CASCADE;
-CREATE TABLE RESPIRATORYCARE
+DROP TABLE IF EXISTS eicu.RESPIRATORYCARE CASCADE;
+CREATE TABLE  eicu.RESPIRATORYCARE
 (
   RESPCAREID INT,
 	PATIENTUNITSTAYID INT,
@@ -595,8 +595,8 @@ CREATE TABLE RESPIRATORYCARE
 --  DDL for Table RESPIRATORYCHARTING
 --------------------------------------------------------
 
-DROP TABLE IF EXISTS RESPIRATORYCHARTING CASCADE;
-CREATE TABLE RESPIRATORYCHARTING
+DROP TABLE IF EXISTS eicu.RESPIRATORYCHARTING CASCADE;
+CREATE TABLE  eicu.RESPIRATORYCHARTING
 (
   RESPCHARTID INT,
 	PATIENTUNITSTAYID INT,
@@ -611,8 +611,8 @@ CREATE TABLE RESPIRATORYCHARTING
 --  DDL for Table TREATMENT
 --------------------------------------------------------
 
-DROP TABLE IF EXISTS treatment CASCADE;
-CREATE TABLE treatment
+DROP TABLE IF EXISTS eicu.treatment CASCADE;
+CREATE TABLE  eicu.treatment
 (
   treatmentid INT,
 	patientunitstayid INT,
@@ -624,8 +624,8 @@ CREATE TABLE treatment
 --  DDL for Table VITALAPERIODIC
 --------------------------------------------------------
 
-DROP TABLE IF EXISTS vitalaperiodic CASCADE;
-CREATE TABLE vitalaperiodic
+DROP TABLE IF EXISTS eicu.vitalaperiodic CASCADE;
+CREATE TABLE  eicu.vitalaperiodic
 (
   vitalaperiodicid INT NOT NULL,
 	patientunitstayid INT NOT NULL,
@@ -645,8 +645,8 @@ CREATE TABLE vitalaperiodic
 --  DDL for Table VITALPERIODIC
 --------------------------------------------------------
 
-DROP TABLE IF EXISTS vitalperiodic CASCADE;
-CREATE TABLE vitalperiodic
+DROP TABLE IF EXISTS eicu.vitalperiodic CASCADE;
+CREATE TABLE  eicu.vitalperiodic
 (
   vitalperiodicid BIGINT,
 	patientunitstayid INT,
